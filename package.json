@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
+   "prebuild": "chmod +x ./node_modules/.bin/vite || true",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"
@@ -29,11 +30,11 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.4.21",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.3.0"
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.21"
   },
-   "engines": {
+  "engines": {
     "node": ">=18"
   }
 }
